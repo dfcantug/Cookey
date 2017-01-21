@@ -9,7 +9,7 @@ import FooterComp from './FooterComponent.jsx';
 class MainPage extends React.Component {
   render() {
     return (
-      <div>
+      <div className = "main">
         <NavBar />
         <SearchComp />
         <FooterComp />
