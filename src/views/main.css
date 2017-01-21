@@ -1,17 +1,15 @@
-#nav_bar {
-  font-size: 20px;
-}
-
 .container {
   padding: 5px;
   width: 95%;
 }
 
 #nav_bar {
+  font-size: 25px;
+  text-align: center;
   background-color: rgba(247, 188, 129, 0.7);
   border-radius: 5px;
   height: 75px;
-  padding: 0px;
+  vertical-align: middle;
 }
 
 .btn {
@@ -19,4 +17,6 @@
   cursor: pointer;
   border: none;
   background: none;
+  vertical-align: middle;
+  padding: 15px;
 }
