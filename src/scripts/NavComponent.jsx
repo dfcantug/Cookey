@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
+import {Navbar, Nav, NavbarHeader, NavbarBrand, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
-class NavBar extends React.Component {
+class NavComp extends React.Component {
   render() {
     return (
-      <div className = "row" id = "nav_bar">
-        <div className = "col-md-1 btn">
-          <a href="/"><img style={{width: 60}, {height: 60}} src={'https://s3.amazonaws.com/cookey/cookey_logo.png'} /> </a>
-        </div>
-        <div className = "col-md-5">Search Bar</div>
-        <div className = "col-md-2 btn btn-secondary" ><a href="/cookbook">Cook Book</a></div>
-        <div className = "col-md-2 btn btn-secondary">Forum</div>
-        <div className = "col-md-2 btn btn-secondary">Login/Sign Up</div>
-      </div>
+          <Navbar style={{height: 65 + 'px'}}>
+                <Navbar.Header>
+                      <Navbar.Brand>
+                         <a href="/"><img style={{width: 40 + 'px'}, {height: 40 + 'px'}} src={'https://s3.amazonaws.com/cookey/cookey_logo.png'} /> </a>
+                      </Navbar.Brand>
+               </Navbar.Header>
+               <Nav>
+                     <NavDropdown eventKey={3} title="Cook Book" id="basic-nav-dropdown">
+                           <MenuItem eventKey={3.1} href = "/cookbook">Dishes</MenuItem>
+                           <MenuItem eventKey={3.2} href = "/cookbook">Ingredients</MenuItem>
+                     </NavDropdown>
+                     <NavItem eventKey={1} href="#">Forum</NavItem>
+                     <NavItem eventKey={2} href="#">Login/Sign Up</NavItem>
+               </Nav>
+     </Navbar>
     );
-  }
+  };
 }
 
-export default NavBar;
+export default NavComp;

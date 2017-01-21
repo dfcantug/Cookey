@@ -1,14 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
-import NavBar from './NavComponent.jsx';
+
+import NavComp from './NavComponent.jsx';
 
 class MainPageCookBook extends React.Component {
   render() {
     return (
       <div>
-      <NavBar />
-      <Recipe />
-    </div>
+        <NavComp />
+        <Recipe />
+      </div>
     );
   };
 }
