@@ -20359,13 +20359,21 @@
 	                                          { href: '/' },
 	                                          _react2.default.createElement('img', { style: ({ width: 40 + 'px' }, { height: 40 + 'px' }), src: 'https://s3.amazonaws.com/cookey/cookey_logo.png' }),
 	                                          ' '
+<<<<<<< Updated upstream
 	                                    ),
 	                                    'Cookey'
+=======
+	                                    )
+>>>>>>> Stashed changes
 	                              )
 	                        ),
 	                        _react2.default.createElement(
 	                              _reactBootstrap.Nav,
+<<<<<<< Updated upstream
 	                              { style: { paddingLeft: 700 + 'px' } },
+=======
+	                              null,
+>>>>>>> Stashed changes
 	                              _react2.default.createElement(
 	                                    _reactBootstrap.NavDropdown,
 	                                    { eventKey: 3, title: 'Cook Book', id: 'basic-nav-dropdown' },
