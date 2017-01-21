@@ -2,16 +2,6 @@ html, body {
       color: #d99d5e;
 }
 
-#count {
-      color: #aafefb;
-}
-
-#count2 {
-      color: #7d77c7;
-}
-
-#bitch {
-      color: rgb(233, 42, 42);
-      weight: 900;
-      font-size: 64px;
+#nav_bar {
+  font-size: 12px;
 }
