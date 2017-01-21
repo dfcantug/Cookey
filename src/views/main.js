@@ -40010,6 +40010,18 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var divStyle = {
+	  backgroundImage: 'url(search-dark.png) noRepeat' + 10 + 'px' + 6 + 'px' + '#' + 444,
+	  border: 0 + 'none',
+	  font: 'bold' + 12 + 'px Arial,Helvetica,Sans-serif',
+	  color: '#' + 777,
+	  padding: 6 + 'px' + 15 + 'px' + 6 + 'px' + 35 + 'px',
+	  WebkitBorderRadius: 20 + 'px',
+	  MozBorderRadius: 20 + 'px',
+	  borderRadius: 20 + 'px',
+	  textShadow: '0 2px 2px rgba(0, 0, 0, 0.3)'
+	};
+	
 	var SearchComp = function (_React$Component) {
 	  _inherits(SearchComp, _React$Component);
 	
@@ -40029,6 +40041,19 @@
 	          'div',
 	          { className: 'col-md-6' },
 	          'Search Bar'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { 'class': 'column' },
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'sb-search', 'class': 'sb-search' },
+	            _react2.default.createElement(
+	              'form',
+	              { method: 'get', action: '/search', id: 'search' },
+	              _react2.default.createElement('input', { name: 'q', type: 'text', size: '40', placeholder: 'Search...', style: divStyle })
+	            )
+	          )
 	        )
 	      );
 	    }

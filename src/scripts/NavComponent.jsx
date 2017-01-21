@@ -20,7 +20,7 @@ class NavComp extends React.Component {
                      <NavItem eventKey={1} href="#">Forum</NavItem>
                      <NavItem eventKey={2} href="#">Login/Sign Up</NavItem>
                </Nav>
-     </Navbar>
+          </Navbar>
     );
   };
 }
