@@ -20328,7 +20328,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn btn-primary' },
 	          _react2.default.createElement(
 	            'a',
 	            { href: '/cookbook' },
@@ -20337,12 +20337,12 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn btn-primary' },
 	          'Forum'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn btn-primary' },
 	          'Login/Sign Up'
 	        )
 	      );
@@ -20400,7 +20400,7 @@
 	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-6' },
+	          { className: 'col-md-6 col-md-offset-3' },
 	          'Search Bar'
 	        )
 	      );
