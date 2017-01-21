@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import {render} from 'react-dom';
 import {Navbar, Nav, NavbarHeader, NavbarBrand, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
+const navStyle = {
+  height: 100 + 'px'
+};
+
 class NavComp extends React.Component {
   render() {
     return (
-          <Navbar style={{height: 65 + 'px'}}>
+          <Navbar style={{navStyle}}>
                 <Navbar.Header>
                       <Navbar.Brand>
                          <a href="/"><img style={{width: 40 + 'px'}, {height: 40 + 'px'}} src={'https://s3.amazonaws.com/cookey/cookey_logo.png'} /> </a>

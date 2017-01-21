@@ -23,7 +23,7 @@ class Recipe extends React.Component {
       };
   }
   render() {
-    const ingredients = ['Chile Piquin', 'Tortillas', 'Aguacate'];
+    const ingredients = ['Chile Piquin', 'Tortillas', 'Aguacatex  '];
     const ingredientDivs = ingredients.map((ingredient, index) => <li> {ingredient} </li>);
 
     /* this will eventually come from the props that are parsed in from the databse*/

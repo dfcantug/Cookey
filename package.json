@@ -38,6 +38,7 @@
     "react-bootstrap": "^0.30.7",
     "react-dom": "^0.14.6",
     "react-tabs": "^0.8.2",
+    "react-fontawesome": "^1.5.0",
     "webpack": "^1.14.0"
   },
   "devDependencies": {
