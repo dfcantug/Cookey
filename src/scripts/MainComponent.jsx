@@ -18,4 +18,18 @@ class MainPage extends React.Component {
   };
 }
 
+class Recipe extends React.Component {
+  constructor() {
+      super();
+      this.state = {
+        title: 'Current Recipe',
+        ingredients: Array(10).fill('ingredient')
+      };
+  }
+}
+
+class Ingredient extends React.Component{
+
+}
+
 render(<MainPage/>, document.getElementById('root'));
