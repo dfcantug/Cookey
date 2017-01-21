@@ -1,4 +1,4 @@
-var express = require("express");
+  var express = require("express");
 var path = require('path');
  var app = express();
  var port = process.env.PORT || 3000;
@@ -14,5 +14,8 @@ var path = require('path');
  app.get("/", function (req,res) {
        res.render('index.ejs');
  });
+ app.get("/cookbook", function (req, res) {
+   res.render('cookBook.ejs')
+})
  app.listen(port);
  console.log("listening on port " + port);
