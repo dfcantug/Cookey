@@ -20333,6 +20333,10 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var navStyle = {
+	      height: 100 + 'px'
+	};
+	
 	var NavComp = function (_React$Component) {
 	      _inherits(NavComp, _React$Component);
 	
@@ -20347,7 +20351,7 @@
 	            value: function render() {
 	                  return _react2.default.createElement(
 	                        _reactBootstrap.Navbar,
-	                        { style: { height: 65 + 'px' } },
+	                        { style: { navStyle: navStyle } },
 	                        _react2.default.createElement(
 	                              _reactBootstrap.Navbar.Header,
 	                              null,
@@ -40107,16 +40111,21 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'row' },
+	        { className: 'row', style: { textAlign: 'center' } },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-6' },
-	          'CopyRight'
+	          { className: 'col-md-4' },
+	          '\xA9 Cookey 2017'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-6' },
-	          'Team Info'
+	          { className: 'col-md-4' },
+	          'GitHub'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col-md-4' },
+	          'Mikael, David, Joe, Carlos'
 	        )
 	      );
 	    }

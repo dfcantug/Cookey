@@ -61,6 +61,8 @@
 	
 	var _NavComponent2 = _interopRequireDefault(_NavComponent);
 	
+	var _reactTabs = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-tabs\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -102,8 +104,7 @@
 	    var _this2 = _possibleConstructorReturn(this, (Recipe.__proto__ || Object.getPrototypeOf(Recipe)).call(this));
 	
 	    _this2.state = {
-	      title: 'Current Recipe',
-	      ingredients: Array(10).fill('ingredient')
+	      title: 'Current Recipe'
 	    };
 	    return _this2;
 	  }
@@ -111,31 +112,63 @@
 	  _createClass(Recipe, [{
 	    key: 'render',
 	    value: function render() {
-	      var ingredientsDivs = [];
-	      for (var i = 0; i < this.state.ingredients.length; i++) {
-	        ingredientsDivs.push(_react2.default.createElement(
-	          'span',
+	      var ingredients = ['Chile Piquin', 'Tortillas', 'Aguacatex  '];
+	      var ingredientDivs = ingredients.map(function (ingredient, index) {
+	        return _react2.default.createElement(
+	          'li',
 	          null,
 	          ' ',
-	          this.state.ingredients[i]
-	        ));
-	      }
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          ' ',
-	          this.state.title,
+	          ingredient,
 	          ' '
+	        );
+	      });
+	
+	      /* this will eventually come from the props that are parsed in from the databse*/
+	      return _react2.default.createElement(
+	        _reactTabs.Tabs,
+	        { onSelect: this.handleSelect, lectedIndex: 2 },
+	        _react2.default.createElement(
+	          _reactTabs.TabList,
+	          null,
+	          _react2.default.createElement(
+	            _reactTabs.Tab,
+	            null,
+	            'Ingredients'
+	          ),
+	          _react2.default.createElement(
+	            _reactTabs.Tab,
+	            null,
+	            'Recipes'
+	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
+	          _reactTabs.TabPanel,
 	          null,
-	          ' ',
-	          ingredientsDivs,
-	          ' '
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            'Ingredients yo'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactTabs.TabPanel,
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              ' ',
+	              this.state.title,
+	              ' '
+	            ),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              ingredientDivs
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -20357,6 +20390,10 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var navStyle = {
+	      height: 100 + 'px'
+	};
+	
 	var NavComp = function (_React$Component) {
 	      _inherits(NavComp, _React$Component);
 	
@@ -20371,7 +20408,7 @@
 	            value: function render() {
 	                  return _react2.default.createElement(
 	                        _reactBootstrap.Navbar,
-	                        { style: { height: 65 + 'px' } },
+	                        { style: { navStyle: navStyle } },
 	                        _react2.default.createElement(
 	                              _reactBootstrap.Navbar.Header,
 	                              null,

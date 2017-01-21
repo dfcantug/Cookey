@@ -2,6 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 
 import NavComp from './NavComponent.jsx';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 class MainPageCookBook extends React.Component {
   render() {
@@ -18,21 +19,34 @@ class Recipe extends React.Component {
   constructor() {
       super();
       this.state = {
-        title: 'Current Recipe',
-        ingredients: Array(10).fill('ingredient')
+        title: 'Current Recipe'
       };
   }
   render() {
-    var ingredientsDivs = [];
-    for (var i = 0; i < this.state.ingredients.length; i++){
-      ingredientsDivs.push(<span> {this.state.ingredients[i]}</span>);
-    }
+    const ingredients = ['Chile Piquin', 'Tortillas', 'Aguacatex  '];
+    const ingredientDivs = ingredients.map((ingredient, index) => <li> {ingredient} </li>);
+
+    /* this will eventually come from the props that are parsed in from the databse*/
     return(
-      <div>
-    <div> {this.state.title} </div>
-    <div> {ingredientsDivs} </div>
-  </div>
-  )
+      <Tabs onSelect={this.handleSelect} lectedIndex={2}>
+        <TabList>
+          <Tab>Ingredients</Tab>
+          <Tab>Recipes</Tab>
+        </TabList>
+
+        <TabPanel>
+          <div>Ingredients yo</div>
+        </TabPanel>
+
+        <TabPanel>
+          <div>
+            <div> {this.state.title} </div>
+            <ul>{ingredientDivs}</ul>
+          </div>
+        </TabPanel>
+
+      </Tabs>
+    )
   }
 }
 
