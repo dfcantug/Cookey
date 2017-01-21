@@ -2,9 +2,9 @@
   "name": "cookey",
   "version": "0.0.1",
   "description": "A community for your inner chef",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   "dependencies": {
     "babel": "^6.5.2",
     "express": "^4.14.0",
-    "react": "^15.4.2"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
