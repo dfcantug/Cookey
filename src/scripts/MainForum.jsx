@@ -1,11 +1,16 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import NavBar from './NavComponent.jsx';
+
 
 class MainPageForum extends React.Component {
   render() {
     return (
-      <div> Forum Title</div>
+      <div>
+        <NavBar />
+        <h1>Forum Title</h1>
+      </div>
     );
   };
 }

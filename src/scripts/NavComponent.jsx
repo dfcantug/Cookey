@@ -6,12 +6,12 @@ class NavBar extends React.Component {
     return (
       <div className = "row" id = "nav_bar">
         <div className = "col-md-1 btn">
-          <a href=""><img style={{width: 60}, {height: 60}} src={'https://s3.amazonaws.com/cookey/cookey_logo.png'} /> </a>
+          <a href="/"><img style={{width: 60}, {height: 60}} src={'https://s3.amazonaws.com/cookey/cookey_logo.png'} /> </a>
         </div>
-        <div className = "col-lg-5">Search Bar</div>
-        <div className = "col-lg-2 btn btn-secondary" ><a href="/cookbook">Cook Book</a></div>
-        <div className = "col-lg-2 btn btn-secondary"><a href="/forum">Forum</a></div>
-        <div className = "col-lg-2 btn btn-secondary"><a href="/login">Login/Sign Up</a></div>
+        <div className = "col-md-5">Search Bar</div>
+        <div className = "col-md-2 btn btn-secondary" ><a href="/cookbook">Cook Book</a></div>
+        <div className = "col-md-2 btn btn-secondary"><a href="/forum">Forum</a></div>
+        <div className = "col-md-2 btn btn-secondary"><a href="/login">Login/Sign Up</a></div>
       </div>
     );
   }
