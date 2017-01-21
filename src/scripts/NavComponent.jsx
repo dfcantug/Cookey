@@ -6,12 +6,11 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className = "row" id = "nav_bar">
-        <div className = "col-md-1">Logo</div>
-        <div className = "col-md-7">Search Bar</div>
-        <div className = "col-md-1">CookBook</div>
-        <div className = "col-md-1">Forum</div>
-        <div className = "col-md-1">Login</div>
-        <div className = "col-md-1">Sign Up</div>
+        <div className = "col-md-1 btn btn-secondary">Logo</div>
+        <div className = "col-md-8">Search Bar</div>
+        <div className = "col-md-1 btn btn-secondary" > Cook Book</div>      
+        <div className = "col-md-1 btn btn-secondary">Forum</div>
+        <div className = "col-md-1 btn btn-secondary">Login/Sign Up</div>
       </div>
     );
   }

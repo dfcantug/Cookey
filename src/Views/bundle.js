@@ -20318,33 +20318,28 @@
 	        { className: 'row', id: 'nav_bar' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1' },
+	          { className: 'col-md-1 btn btn-secondary' },
 	          'Logo'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-7' },
+	          { className: 'col-md-8' },
 	          'Search Bar'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1' },
-	          'CookBook'
+	          { className: 'col-md-1 btn btn-secondary' },
+	          ' Cook Book'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1' },
+	          { className: 'col-md-1 btn btn-secondary' },
 	          'Forum'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1' },
-	          'Login'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col-md-1' },
-	          'Sign Up'
+	          { className: 'col-md-1 btn btn-secondary' },
+	          'Login/Sign Up'
 	        )
 	      );
 	    }
