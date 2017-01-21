@@ -20372,21 +20372,22 @@
 	        { className: 'row', id: 'nav_bar' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn' },
 	          _react2.default.createElement(
 	            'a',
 	            { href: '/' },
-	            'Logo'
+	            _react2.default.createElement('img', { style: ({ width: 60 }, { height: 60 }), src: 'https://s3.amazonaws.com/cookey/cookey_logo.png' }),
+	            ' '
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-5' },
+	          { className: 'col-md-5' },
 	          'Search Bar'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-2 btn btn-secondary' },
+	          { className: 'col-md-2 btn btn-secondary' },
 	          _react2.default.createElement(
 	            'a',
 	            { href: '/cookbook' },
@@ -20395,12 +20396,12 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-2 btn btn-secondary' },
+	          { className: 'col-md-2 btn btn-secondary' },
 	          'Forum'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-2 btn btn-secondary' },
+	          { className: 'col-md-2 btn btn-secondary' },
 	          'Login/Sign Up'
 	        )
 	      );
