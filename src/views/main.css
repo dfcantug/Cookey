@@ -3,11 +3,20 @@
 }
 
 .container {
+  padding: 5px;
+  width: 95%;
+}
+
+#nav_bar {
+  background-color: rgba(247, 188, 129, 0.7);
+  border-radius: 5px;
+  height: 75px;
   padding: 0px;
-  margin: 0px 10px;
 }
 
 .btn {
   white-space: nowrap;
   cursor: pointer;
+  border: none;
+  background: none;
 }
