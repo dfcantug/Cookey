@@ -20328,17 +20328,21 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-primary' },
-	          ' Cook Book'
+	          { className: 'col-md-1 btn btn-secondary' },
+	          _react2.default.createElement(
+	            'a',
+	            { href: '/cookbook' },
+	            'Cook Book'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-primary' },
+	          { className: 'col-md-1 btn btn-secondary' },
 	          'Forum'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-primary' },
+	          { className: 'col-md-1 btn btn-secondary' },
 	          'Login/Sign Up'
 	        )
 	      );
