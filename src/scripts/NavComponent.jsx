@@ -10,8 +10,8 @@ class NavBar extends React.Component {
         </div>
         <div className = "col-md-5">Search Bar</div>
         <div className = "col-md-2 btn btn-secondary" ><a href="/cookbook">Cook Book</a></div>
-        <div className = "col-md-2 btn btn-secondary"><a href="/forum">Forum</a></div>
-        <div className = "col-md-2 btn btn-secondary"><a href="/login">Login/Sign Up</a></div>
+        <div className = "col-md-2 btn btn-secondary">Forum</div>
+        <div className = "col-md-2 btn btn-secondary">Login/Sign Up</div>
       </div>
     );
   }

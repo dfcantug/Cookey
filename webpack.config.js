@@ -8,8 +8,6 @@ var config = {
   entry: {
     main: APP_DIR + '/MainComponent.jsx',
     cookbook: APP_DIR + '/MainCookBook.jsx',
-    forum: APP_DIR + '/MainForum.jsx',
-    login: APP_DIR + '/MainLogin.jsx',
   },
   output: {
     path: BUILD_DIR,

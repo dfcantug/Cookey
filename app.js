@@ -17,11 +17,5 @@ app.get("/", function (req,res) {
 app.get("/cookbook", function (req, res) {
   res.render('cookBook.ejs')
 });
-app.get("/forum", function (req, res) {
-  res.render('forum.ejs')
-});
-app.get("/login", function (req, res) {
-  res.render('login.ejs')
-});
 app.listen(port);
 console.log("listening on port " + port);
