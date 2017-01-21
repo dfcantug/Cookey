@@ -13,7 +13,6 @@ class MainPageCookBook extends React.Component {
   };
 }
 
-
 class Recipe extends React.Component {
   constructor() {
       super();
@@ -22,7 +21,6 @@ class Recipe extends React.Component {
         ingredients: Array(10).fill('ingredient')
       };
   }
-
   render() {
     var ingredientsDivs = [];
     for (var i = 0; i < this.state.ingredients.length; i++){
