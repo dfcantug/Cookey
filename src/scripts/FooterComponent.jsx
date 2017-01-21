@@ -5,9 +5,10 @@ import {render} from 'react-dom';
 class FooterComp extends React.Component {
   render() {
     return (
-      <div className = "row">
-        <div className = "col-md-6">CopyRight</div>
-        <div className = "col-md-6">Team Info</div>
+      <div className = "row" style = {{textAlign: 'center'}}>
+        <div className = "col-md-4">© Cookey 2017</div>
+        <div className = "col-md-4">GitHub</div>
+        <div className = "col-md-4">Mikael, David, Joe, Carlos</div>
       </div>
     );
   }

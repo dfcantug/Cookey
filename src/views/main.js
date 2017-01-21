@@ -20359,21 +20359,13 @@
 	                                          { href: '/' },
 	                                          _react2.default.createElement('img', { style: ({ width: 40 + 'px' }, { height: 40 + 'px' }), src: 'https://s3.amazonaws.com/cookey/cookey_logo.png' }),
 	                                          ' '
-<<<<<<< Updated upstream
 	                                    ),
 	                                    'Cookey'
-=======
-	                                    )
->>>>>>> Stashed changes
 	                              )
 	                        ),
 	                        _react2.default.createElement(
 	                              _reactBootstrap.Nav,
-<<<<<<< Updated upstream
 	                              { style: { paddingLeft: 700 + 'px' } },
-=======
-	                              null,
->>>>>>> Stashed changes
 	                              _react2.default.createElement(
 	                                    _reactBootstrap.NavDropdown,
 	                                    { eventKey: 3, title: 'Cook Book', id: 'basic-nav-dropdown' },
@@ -40090,16 +40082,21 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'row' },
+	        { className: 'row', style: { textAlign: 'center' } },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-6' },
-	          'CopyRight'
+	          { className: 'col-md-4' },
+	          '\xA9 Cookey 2017'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-6' },
-	          'Team Info'
+	          { className: 'col-md-4' },
+	          'GitHub'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col-md-4' },
+	          'Mikael, David, Joe, Carlos'
 	        )
 	      );
 	    }

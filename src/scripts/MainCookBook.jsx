@@ -2,6 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 
 import NavComp from './NavComponent.jsx';
+import FooterComp from './FooterComponent.jsx';
+
 
 class MainPageCookBook extends React.Component {
   render() {
@@ -9,6 +11,7 @@ class MainPageCookBook extends React.Component {
       <div>
         <NavComp />
         <Recipe />
+        <FooterComp />
       </div>
     );
   };
