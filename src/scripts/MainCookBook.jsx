@@ -1,24 +1,16 @@
 import React from 'react';
 import {render} from 'react-dom';
-<<<<<<< HEAD
+
 
 import NavComp from './NavComponent.jsx';
-=======
-import NavBar from './NavComponent.jsx';
->>>>>>> 900d7c35ee3fd53811e4c88661c11f22229d9a5c
 
 class MainPageCookBook extends React.Component {
   render() {
     return (
       <div>
-<<<<<<< HEAD
         <NavComp />
-      </div>
-=======
-      <NavBar />
       <Recipe />
     </div>
->>>>>>> 900d7c35ee3fd53811e4c88661c11f22229d9a5c
     );
   };
 }
