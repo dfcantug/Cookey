@@ -91,7 +91,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'main' },
 	        _react2.default.createElement(_NavComponent2.default, null),
 	        _react2.default.createElement(_SearchComponent2.default, null),
 	        _react2.default.createElement(_FooterComponent2.default, null)
@@ -20318,7 +20318,7 @@
 	        { className: 'row', id: 'nav_bar' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn btn-primary' },
 	          'Logo'
 	        ),
 	        _react2.default.createElement(
@@ -20328,17 +20328,17 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn btn-primary' },
 	          ' Cook Book'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn btn-primary' },
 	          'Forum'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-1 btn btn-secondary' },
+	          { className: 'col-md-1 btn btn-primary' },
 	          'Login/Sign Up'
 	        )
 	      );
