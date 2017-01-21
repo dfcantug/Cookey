@@ -5,7 +5,7 @@ import {render} from 'react-dom';
 class MainPageCookBook extends React.Component {
   render() {
     return (
-      <div> asdasd</div>
+      <div> CookBook Title</div>
     );
   };
 }
