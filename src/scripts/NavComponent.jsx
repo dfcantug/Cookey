@@ -9,9 +9,10 @@ class NavComp extends React.Component {
                 <Navbar.Header>
                       <Navbar.Brand>
                          <a href="/"><img style={{width: 40 + 'px'}, {height: 40 + 'px'}} src={'https://s3.amazonaws.com/cookey/cookey_logo.png'} /> </a>
+                         Cookey
                       </Navbar.Brand>
                </Navbar.Header>
-               <Nav>
+               <Nav style={{paddingLeft: 700 + 'px'}}>
                      <NavDropdown eventKey={3} title="Cook Book" id="basic-nav-dropdown">
                            <MenuItem eventKey={3.1} href = "/cookbook">Dishes</MenuItem>
                            <MenuItem eventKey={3.2} href = "/cookbook">Ingredients</MenuItem>
