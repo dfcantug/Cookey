@@ -61,11 +61,11 @@
 	
 	var _NavComponent2 = _interopRequireDefault(_NavComponent);
 	
-	var _SearchComponent = __webpack_require__(/*! ./SearchComponent.jsx */ 412);
+	var _SearchComponent = __webpack_require__(/*! ./SearchComponent.jsx */ 421);
 	
 	var _SearchComponent2 = _interopRequireDefault(_SearchComponent);
 	
-	var _FooterComponent = __webpack_require__(/*! ./FooterComponent.jsx */ 413);
+	var _FooterComponent = __webpack_require__(/*! ./FooterComponent.jsx */ 422);
 	
 	var _FooterComponent2 = _interopRequireDefault(_FooterComponent);
 	
@@ -39986,7 +39986,16 @@
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
 
 /***/ },
-/* 412 */
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */
 /*!*****************************************!*\
   !*** ./src/scripts/SearchComponent.jsx ***!
   \*****************************************/
@@ -40015,15 +40024,21 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var divStyle = {
-	  backgroundImage: 'url(search-dark.png) noRepeat' + 10 + 'px' + 6 + 'px' + '#' + 444,
 	  border: 0 + 'none',
-	  font: 'bold' + 12 + 'px Arial,Helvetica,Sans-serif',
+	  height: 50 + 'px',
+	  fontSize: 30 + 'px',
 	  color: '#' + 777,
-	  padding: 6 + 'px' + 15 + 'px' + 6 + 'px' + 35 + 'px',
-	  WebkitBorderRadius: 20 + 'px',
-	  MozBorderRadius: 20 + 'px',
-	  borderRadius: 20 + 'px',
-	  textShadow: '0 2px 2px rgba(0, 0, 0, 0.3)'
+	  marginTop: 20 + 'px',
+	  marginBottom: 50 + 'px',
+	  padding: 6 + 'px ' + 105 + 'px ' + 6 + 'px ' + 35 + 'px',
+	  WebkitBorderRadius: 70 + 'px',
+	  MozBorderRadius: 70 + 'px',
+	  borderRadius: 70 + 'px',
+	  textShadow: 0 + 'px ' + 2 + 'px ' + 2 + 'px ' + 'rgba(0, 0, 0, 0.3)',
+	  WebkitTransition: 'all 0.7s ease 0s',
+	  MozTransition: 'all 0.7s ease 0s',
+	  OTransition: 'all 0.7s ease 0s',
+	  transition: 'all 0.7s ease 0s'
 	};
 	
 	var SearchComp = function (_React$Component) {
@@ -40043,19 +40058,18 @@
 	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-6' },
-	          'Search Bar'
-	        ),
-	        _react2.default.createElement(
-	          'div',
 	          { 'class': 'column' },
 	          _react2.default.createElement(
 	            'div',
-	            { id: 'sb-search', 'class': 'sb-search' },
+	            { 'class': 'search' },
 	            _react2.default.createElement(
-	              'form',
-	              { method: 'get', action: '/search', id: 'search' },
-	              _react2.default.createElement('input', { name: 'q', type: 'text', size: '40', placeholder: 'Search...', style: divStyle })
+	              'center',
+	              null,
+	              _react2.default.createElement(
+	                'form',
+	                { method: 'get', action: '/search', id: 'search' },
+	                _react2.default.createElement('input', { name: 'q', type: 'text', size: '50', placeholder: 'Search...', style: divStyle })
+	              )
 	            )
 	          )
 	        )
@@ -40069,7 +40083,7 @@
 	exports.default = SearchComp;
 
 /***/ },
-/* 413 */
+/* 422 */
 /*!*****************************************!*\
   !*** ./src/scripts/FooterComponent.jsx ***!
   \*****************************************/
