@@ -5,7 +5,7 @@ import {Navbar, Nav, NavbarHeader, NavbarBrand, NavItem, NavDropdown, MenuItem} 
 const navStyle = {
   height: 100 + 'px',
   marginBottom: 0 + 'px',
-  paddingBottom: 10 + 'px'
+  paddingBottom: 10 + 'px',
 };
 
 class NavComp extends React.Component {
