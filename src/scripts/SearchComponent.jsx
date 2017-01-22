@@ -1,22 +1,28 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-const divStyle = {
+const searchStyle = {
     border: 0 + 'none',
     height: 50 + 'px',
     fontSize: 30 + 'px',
     color: '#' + 777,
-    marginTop: 20 + 'px',
-    marginBottom: 50 + 'px',
+    marginTop: 0 + 'px',
+    marginBottom: 10 + 'px',
     padding: 6 + 'px ' + 105 + 'px ' + 6 + 'px ' + 35 + 'px',
     WebkitBorderRadius: 70 + 'px',
     MozBorderRadius: 70 + 'px',
     borderRadius: 70 + 'px',
-    textShadow: 0 + 'px ' + 2 + 'px ' + 2 + 'px ' + 'rgba(0, 0, 0, 0.3)',
     WebkitTransition: 'all 0.7s ease 0s',
     MozTransition: 'all 0.7s ease 0s',
     OTransition: 'all 0.7s ease 0s',
     transition: 'all 0.7s ease 0s'
+};
+
+const imgStyle = {
+  opacity: 0.5,
+  width: 1200 + 'px',
+  height: 600 + 'px',
+  borderRadius: 10 + 'px'
 };
 
 
@@ -27,9 +33,10 @@ class SearchComp extends React.Component {
         <div class="column">
 					<div class="search">
             <center>
-            <form method="get" action="/search" id="search">
-             <input name="q" type="text" size="50" placeholder="Search..." style = {divStyle}></input>
-            </form>
+              <form method="get" action="/search" id="search">
+               <input name="q" type="text" size="50" placeholder="Search for recipes..." style = {searchStyle}></input>
+              </form>
+            <img style={imgStyle} src={'http://videos2.healthination.com/HN_BB_05_EasyCooking_ProRes_739/HN_BB_05_EasyCooking_ProRes_739-img_1280x720.jpg'} />
             </center>
 					</div>
 				</div>

@@ -20334,7 +20334,9 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var navStyle = {
-	      height: 100 + 'px'
+	      height: 100 + 'px',
+	      marginBottom: 0 + 'px',
+	      paddingBottom: 10 + 'px'
 	};
 	
 	var NavComp = function (_React$Component) {
@@ -40023,22 +40025,28 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var divStyle = {
+	var searchStyle = {
 	  border: 0 + 'none',
 	  height: 50 + 'px',
 	  fontSize: 30 + 'px',
 	  color: '#' + 777,
-	  marginTop: 20 + 'px',
-	  marginBottom: 50 + 'px',
+	  marginTop: 0 + 'px',
+	  marginBottom: 10 + 'px',
 	  padding: 6 + 'px ' + 105 + 'px ' + 6 + 'px ' + 35 + 'px',
 	  WebkitBorderRadius: 70 + 'px',
 	  MozBorderRadius: 70 + 'px',
 	  borderRadius: 70 + 'px',
-	  textShadow: 0 + 'px ' + 2 + 'px ' + 2 + 'px ' + 'rgba(0, 0, 0, 0.3)',
 	  WebkitTransition: 'all 0.7s ease 0s',
 	  MozTransition: 'all 0.7s ease 0s',
 	  OTransition: 'all 0.7s ease 0s',
 	  transition: 'all 0.7s ease 0s'
+	};
+	
+	var imgStyle = {
+	  opacity: 0.5,
+	  width: 1200 + 'px',
+	  height: 600 + 'px',
+	  borderRadius: 10 + 'px'
 	};
 	
 	var SearchComp = function (_React$Component) {
@@ -40068,8 +40076,9 @@
 	              _react2.default.createElement(
 	                'form',
 	                { method: 'get', action: '/search', id: 'search' },
-	                _react2.default.createElement('input', { name: 'q', type: 'text', size: '50', placeholder: 'Search...', style: divStyle })
-	              )
+	                _react2.default.createElement('input', { name: 'q', type: 'text', size: '50', placeholder: 'Search for recipes...', style: searchStyle })
+	              ),
+	              _react2.default.createElement('img', { style: imgStyle, src: 'http://videos2.healthination.com/HN_BB_05_EasyCooking_ProRes_739/HN_BB_05_EasyCooking_ProRes_739-img_1280x720.jpg' })
 	            )
 	          )
 	        )
